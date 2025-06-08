@@ -738,17 +738,17 @@
         let isValid = true;
         
         if (!name) {
-            nameError.textContent = 'Please enter your name';
+            nameError.textContent = 'Por favor ingresa tu nombre';
             nameInput.classList.add('error');
             isValid = false;
         }
         
         if (!email) {
-            emailError.textContent = 'Please enter your email';
+            emailError.textContent = 'Por favor ingresa tu mail';
             emailInput.classList.add('error');
             isValid = false;
         } else if (!isValidEmail(email)) {
-            emailError.textContent = 'Please enter a valid email address';
+            emailError.textContent = 'Por favor ingresa un mail valido';
             emailInput.classList.add('error');
             isValid = false;
         }
