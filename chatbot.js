@@ -606,24 +606,24 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                 </svg>
-                Start chatting
+                Chat
             </button>
             <p class="chat-response-time">${settings.branding.responseTimeText}</p>
         </div>
         <div class="user-registration">
-            <h2 class="registration-title">Please enter your details to start chatting</h2>
+            <h2 class="registration-title">Por favor ingresa tus datos para empezar</h2>
             <form class="registration-form">
                 <div class="form-field">
-                    <label class="form-label" for="chat-user-name">Name</label>
-                    <input type="text" id="chat-user-name" class="form-input" placeholder="Your name" required>
+                    <label class="form-label" for="chat-user-name">Nombre</label>
+                    <input type="text" id="chat-user-name" class="form-input" placeholder="Nombre Completo" required>
                     <div class="error-text" id="name-error"></div>
                 </div>
                 <div class="form-field">
                     <label class="form-label" for="chat-user-email">Email</label>
-                    <input type="email" id="chat-user-email" class="form-input" placeholder="Your email address" required>
+                    <input type="email" id="chat-user-email" class="form-input" placeholder="Direccion de mail" required>
                     <div class="error-text" id="email-error"></div>
                 </div>
-                <button type="submit" class="submit-registration">Continue to Chat</button>
+                <button type="submit" class="submit-registration">Listo!</button>
             </form>
         </div>
     `;
@@ -633,7 +633,7 @@
         <div class="chat-body">
             <div class="chat-messages"></div>
             <div class="chat-controls">
-                <textarea class="chat-textarea" placeholder="Type your message here..." rows="1"></textarea>
+                <textarea class="chat-textarea" placeholder="Escribe tu mensaja acá..." rows="1"></textarea>
                 <button class="chat-submit">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M22 2L11 13"></path>
