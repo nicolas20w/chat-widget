@@ -217,4 +217,23 @@
       submitBtn.click();
     }
   });
+
+    // Ensure launcher and chatWindow position match the config
+  const configPosition = (settings.style?.position || 'right').toLowerCase();
+
+  launcher.classList.remove('left-side', 'right-side');
+  chatWindow.classList.remove('left-side', 'right-side');
+
+  if (configPosition === 'left') {
+    launcher.classList.add('left-side');
+    chatWindow.classList.add('left-side');
+    launcher.style.left = '20px';
+    launcher.style.right = 'auto';
+  } else {
+    launcher.classList.add('right-side');
+    chatWindow.classList.add('right-side');
+    launcher.style.right = '20px';
+    launcher.style.left = 'auto';
+  }
+
 })();
