@@ -186,7 +186,7 @@
     `;
 
     const launcher = document.createElement('button');
-    launcher.className = `chat-launcher ${settings.style?.position === 'left' ? 'left-side' : 'right-side'}`;
+    launcher.className = `chat-launcher ${settings.style?.position === 'right' ? 'right-side' : 'right-side'}`;
     launcher.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5A8.38 8.38 0 0 1 9 19l-6 2 2-6A8.38 8.38 0 0 1 3 11.5 8.5 8.5 0 0 1 11.5 3a8.5 8.5 0 0 1 9 8.5Z"/></svg>`;
 
     widgetRoot.appendChild(chatWindow);
